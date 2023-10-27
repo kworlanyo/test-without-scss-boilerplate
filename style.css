@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.671)), url(https://images.unsplash.com/photo-1688733720228-4f7a18681c4f?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: min(70%, 1200px);
+    /* min-height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+}
+
+.card .top {
+    width: 100%;
+}
+
+.card .top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .bottom {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card .bottom .text h3 {
+    margin-bottom: 1rem;
+}
+
+.card .bottom button {
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+}
+
+
+
